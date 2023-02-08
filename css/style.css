@@ -8,6 +8,7 @@
   --main-font-size: 14px;
   --main-font-color: #38214a;
   --alternate-font-color: #ffffff;
+  --main-background-color: #5d516c;
 
 }
 
@@ -32,7 +33,7 @@
   overflow: hidden;
 }
 
-/* Base Typography */
+/* Base Typography & Grid */
 .page {
   font-family: "Poppins", Verdana, sans-serif;
   font-size: var(--main-font-size);
@@ -40,7 +41,20 @@
   font-weight: normal;
 }
 
-/* Header */
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+}
+
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -100,5 +114,24 @@
   display: block;
   padding: 25px;
   padding-top: 37px;
-  color: 
+  color: var(--alternate-font-color);
+  font-weight: 600;
+  text-decoration: none;
 }
+
+.site-menu__link:hover {
+  opacity: 0.6;
+}
+
+.site-menu__link:active {
+  opacity: 0.3;
+}
+
+/* MAIN CONTENT */
+.hero-section {
+  height: 100vh;
+  padding-top: 64px;
+  background-color: var(--main-background-color);
+}
+
+/* FOOTER */
