@@ -8,7 +8,7 @@
   --main-font-size: 14px;
   --main-font-color: #38214a;
   --alternate-font-color: #ffffff;
-  --main-background-color: #5d516c;
+  --main-background-color: #252248
 
 }
 
@@ -49,7 +49,7 @@
 
 /* HEADER */
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left:0;
   width: 100%;
@@ -130,8 +130,11 @@
 /* MAIN CONTENT */
 .hero-section {
   height: 100vh;
-  padding-top: 64px;
   background-color: var(--main-background-color);
 }
-
+@media (min-width: 361px) {
+  .hero-section {
+  padding-top: 64px;
+  }
+}
 /* FOOTER */
