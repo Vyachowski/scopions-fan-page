@@ -1,0 +1,17 @@
+/* Variables */
+:root {
+  --main-font-size: 14px;
+}
+
+/* Reset base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Base styles*/
+.page {
+  font: "Poppins", Verdana, sans-serif;
+  font-size: var(--main-font-size);
+  line-height: var(--main-font-size);
+}
