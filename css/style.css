@@ -31,3 +31,28 @@
   line-height: var(--main-font-size);
   font-weight: normal;
 }
+
+/* Header */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__logo {
+  display: block;
+  height: 22px;
+}
+
+.menu-toggle {
+  display: none;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+}
+
+@media (max-width: 360px) {
+  .menu-toggle {
+    display: block;
+  }
+}
