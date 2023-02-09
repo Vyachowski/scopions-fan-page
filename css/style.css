@@ -178,6 +178,10 @@
   opacity: 0.3;
 }
 
+.site-menu__link[aria-current="page"] {
+  opacity: 0.6;
+}
+
 /* MAIN CONTENT */
 
 /* Hero Section */
@@ -295,6 +299,21 @@
   font-size: 16px;
 }
 
+.poster__list {
+  display: grid;
+  list-style-type: none;
+}
+
+.poster__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 240px;
+  min-height: 310px;
+  padding: 15px;
+  border: 1px solid black;
+}
 /* FOOTER */
 
 . {
