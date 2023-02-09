@@ -375,6 +375,7 @@
 }
 
 /* Poster Section */
+
 .poster {
   padding: 65px 0;
 }
@@ -450,6 +451,71 @@
   line-height: 20px;
   color: var(--alternate-font-color);
   margin-bottom:5px;
+}
+
+/* Poster Section */
+
+.socials {
+  padding: 65px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  column-gap: 140px;
+  row-gap: 70px;
+  list-style-type: none;
+}
+
+.socials__item {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__link {
+  position: relative;
+  display: block;
+  font-size: 110px;
+  line-height: 1em;
+  font-weight: 700;
+  color: rgba(56, 33, 74, 0.1);
+  text-decoration: none;
+}
+
+.socials__link:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--header-font-color);
+}
+
+.socials__link--fb:after {
+  content: "Facebook"
+}
+
+.socials__link--in:after {
+  content: "Instagram"
+}
+
+.socials__link--tw:after {
+  content: "Twitter"
+}
+
+.socials__link--yt:after {
+  content: "Youtube"
+}
+
+.socials__link--sc:after {
+  content: "Soundcloud"
 }
 
 /* FOOTER */
