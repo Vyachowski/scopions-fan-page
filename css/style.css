@@ -593,6 +593,23 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
+.booking__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+
+.booking__field {
+  width: 100%;
+  min-width: 240px;
+  max-width: 350px;
+  margin: 0 20px 18px 20px;
+  border: 0 solid var(--alternate-font-color);
+  border-bottom-width: 1px;
+  background-color: transparent; 
+}
 /* FOOTER */
 
 
