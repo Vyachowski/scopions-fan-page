@@ -524,11 +524,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 65px;
+  padding: 120px 0;
   overflow: hidden;
 }
 
-.promo-video__wrapper {
+.promo-video::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -542,11 +542,55 @@
   content: "";
 }
 
-.promo-video__video {
+.promo-video__content {
   position: relative;
   z-index: 2;
   max-width: 960px;
   max-height: 540px;
+}
+
+/* Partners Section */
+
+.partners {
+  display: gird;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 60px 0;
+}
+
+/* Booking Section */
+
+.booking {
+  padding: 120px 0;
+  background-color: var(--main-background-color);
+}
+
+.booking__title,
+.booking__subtitle {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5em;
+  color: var(--alternate-font-color);
+}
+.booking__title {
+  margin-bottom: 17px;
+  font-size: var(--header-font-size);
+}
+
+.booking__subtitle {
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.booking__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* FOOTER */
