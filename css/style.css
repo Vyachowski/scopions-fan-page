@@ -687,6 +687,7 @@
 }
 
 /* FOOTER */
+
 .footer {
   background-color: var(--main-background-color);
 }
@@ -707,14 +708,4 @@
 .footer__subtitle {
   text-align: center;
   color: var(--alternate-font-color);
-}
-@media (max-width: 360px) {
-  . {
-    padding-top: 44px;
-  }
-}
-@media (min-width: 361px) {
-  . {
-    padding-top: 64px;
-  }
 }
