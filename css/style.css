@@ -616,7 +616,7 @@
 }
 
 .booking__wrapper {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -655,7 +655,7 @@
 }
 
 .booking__field {
-  margin: 0 20px 18px 20px;
+  margin-bottom: 18px;
 }
 
 .booking__field::placeholder {
@@ -692,7 +692,7 @@
 }
 
 .footer__wrapper {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
