@@ -44,6 +44,16 @@
   width: 200px;
   height: auto;
   fill: var(--header-font-color);
+  transition-duration: 0.6s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+  transition-duration: 0.6s;
+}
+
+.logo:active {
+  opacity: 0.6;
 }
 
 .logo--dark-theme {
@@ -571,6 +581,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 468px;
   padding: 120px 0;
   overflow: hidden;
 }
@@ -598,13 +609,24 @@
 
 /* Partners Section */
 
-.partners {
+.partners__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  row-gap: 30px;
+  width: 100%;
+  margin: 0 auto;
   padding: 60px 0;
+  list-style-type: none;
+}
+
+.partners__logo {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* Booking Section */
