@@ -12,6 +12,7 @@
   --alternate-font-color: #ffffff;
   --link-font-color: #38214a;
   --main-background-color: #181c42;
+  --accent-background-color: #e30613;
 
 }
 
@@ -39,7 +40,6 @@
 /* Basic blocks */
 
 /* Logo */
-
 .logo {
   width: 200px;
   height: auto;
@@ -51,11 +51,10 @@
 }
 
 .logo__accent {
-  fill: #e30613;
+  fill: var(--accent-background-color);
 }
 
 /* Button */
-
 .button {
   display: inline-block;
   padding: 7px 38px;
@@ -82,11 +81,9 @@
 }
 
 /* Field */
-
 .field {
   width: 100%;
-  min-width: 240px;
-  max-width: 350px;
+  min-width: 150px;
   padding: 6px 20px;
   border: 0 solid var(--alternate-font-color);
   border-bottom-width: 1px;
@@ -144,7 +141,7 @@
   }
 }
 
-.main-nav__logo {
+.main-nav__link {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -152,10 +149,16 @@
   text-decoration: none;
   transform: translateY(3px);
 }
-
+@media (min-width: 768px) {
+  .main-nav__logo {
+      fill: var(--alternate-font-color);
+  }
+}
 
 .main-nav__toggle {
   display: block;
+  width: 21px;
+  height: 21px;
   border: none;
   background-color: transparent;
   color: var(--link-font-color);
@@ -166,11 +169,6 @@
   .main-nav__toggle {
     display: none;
   }
-}
-
-.main-nav__wrapper {
-  width: 21px;
-  height: 21px;
 }
 
 .main-nav__circles-row {
@@ -327,6 +325,7 @@
 
 .hero-section__content {
   position: relative;
+  width: 80%;
 }
 
 .hero-section__content::before {
@@ -345,7 +344,7 @@
   min-height: 100px;
   height: 100%;
   max-height: 520px;
-  background-color: #fe0302;
+  background-color: var(--accent-background-color);
   border-radius: 50%;
   z-index: 1;
   content: "";
@@ -354,7 +353,6 @@
 .hero-section__image {
   position: relative;
   display: block;
-  
   width: 100%;
   max-width: 550px;
   height: auto;
@@ -365,10 +363,11 @@
 .hero-section__sign {
   position: absolute;
   bottom: 30px;
-  right: 0;
+  left: 50%;
   z-index: 4;
   display: block;
   width: 60%;
+  max-width: 300px;
   height: auto;
 }
 
@@ -433,13 +432,13 @@
   margin: 0 auto;
 }
 
-.poster__title,
+.poster__header,
 .poster__subtitle {
   margin: 0 auto;
   text-align: center;
 }
 
-.poster__title {
+.poster__header {
   margin-bottom: 17px;
   font-size: var(--header-font-size);
   line-height: 50px;
@@ -600,7 +599,7 @@
 /* Partners Section */
 
 .partners {
-  display: gird;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
@@ -707,5 +706,25 @@
 
 .footer__subtitle {
   text-align: center;
+  color: var(--alternate-font-color);
+}
+
+.social-promo__list {
+  display: grid;
+  gap: 30px;
+  padding: 40px 0;
+  list-style-type: none;
+}
+
+.social-promo__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.footer__copyright-text {
+  font-size: 15px;
   color: var(--alternate-font-color);
 }

@@ -13,8 +13,8 @@
   <body class="page__body">
     <header class="header">
       <nav class="main-nav">
-        <a class="main-nav__logo" href="#">
-          <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 40">
+        <a class="main-nav__link" href="#">
+          <svg class="main-nav__logo logo" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 40">
             <g class="logo__content">
               <path d="M14.05,31.86C.91,31.86,0,26.68,0,24.04v-.12H11.33c.12,.7,.5,1.98,3.67,1.98h.08c2.84,0,3.63-.74,3.63-1.69,0-1.03-.66-1.48-3.87-1.69l-3.62-.29C2.35,21.78,.45,18.53,.45,14.94v-.25c0-3.79,2.72-6.83,13.76-6.83h.95c12.15,0,14.17,3.71,14.17,7.33v.04h-10.96c-.21-.66-.58-1.81-3.58-1.81h-.21c-2.76,0-3.46,.58-3.46,1.56s.82,1.52,3.67,1.65l3.71,.12c9.1,.45,11.21,3.05,11.21,7.04v.37c0,3.75-1.77,7.7-14.5,7.7h-1.15Z"/>
               <path d="M30.85,31.33V.16h10.59V16.96l6.71-8.6h11.62l-8.57,10.29,9.6,12.68h-11.99l-7.37-10.04v10.04h-10.59Z"/>
@@ -31,23 +31,21 @@
           </svg>
         </a>
         <button class="main-nav__toggle" type="button">
-          <div class="main-nav__wrapper">
-            <div class="main-nav__circles-row main-nav__circles-row--upper">
+            <span class="main-nav__circles-row main-nav__circles-row--upper">
               <span class="main-nav__circle"></span>
               <span class="main-nav__circle"></span>
               <span class="main-nav__circle"></span>
-            </div>
-            <div class="main-nav__circles-row main-nav__circles-row--middle">
+            </span>
+            <span class="main-nav__circles-row main-nav__circles-row--middle">
               <span class="main-nav__circle"></span>
               <span class="main-nav__circle"></span>
               <span class="main-nav__circle"></span>
-            </div>
-            <div class="main-nav__circles-row main-nav__circles-row--bottom">
+            </span>
+            <span class="main-nav__circles-row main-nav__circles-row--bottom">
               <span class="main-nav__circle"></span>
               <span class="main-nav__circle"></span>
               <span class="main-nav__circle"></span>
-            </div>
-          </div>
+            </span>
           <span class="visually-hidden">Toggle menu.</span>
         </button>
         <ul class="site-menu">
@@ -93,41 +91,41 @@
       </section>
       <section class="poster">
         <div class="poster__wrapper">
-          <h2 class="poster__title">Rock your city like a hurricane!</h2>
+          <h2 class="poster__header">The biggest in Japan!</h2>
           <p class="poster__subtitle">
             The band performed an exceptional list comprised of 17 songs spanning the course of 90 minutes that was close to perfection.
           </p>
           <ol class="poster__list">
             <li class="poster__item">
-              <time class="poster__date" datetime="2023-02-3 21:30">3<br> Feb</time>
+              <time class="poster__date" datetime="2023-02-03T20:00:00">3<br> Feb</time>
               <div class="poster__description">
                 <h3 class="poster__title">Tokyo</h3>
                 <span class="poster__text">Opera House</span>
               </div>
             </li>
             <li class="poster__item">
-              <time class="poster__date" datetime="2023-02-7 20:00">7<br> Feb</time>
+              <time class="poster__date" datetime="2023-02-07T20:00:00">7<br> Feb</time>
               <div class="poster__description">
                 <h3 class="poster__title">Kyoto</h3>
                 <span class="poster__text">Chambers Club</span>
               </div>
             </li>
             <li class="poster__item">
-              <time class="poster__date" datetime="2023-02-12 20:00">12<br> Feb</time>
+              <time class="poster__date" datetime="2023-02-12T20:00:00">12<br> Feb</time>
               <div class="poster__description">
                 <h3 class="poster__title">Osaka</h3>
                 <span class="poster__text">Jazz Main Hall</span>
               </div>
             </li>
             <li class="poster__item">
-              <time class="poster__date" datetime="2023-02-21 21:00">21<br> Feb</time>
+              <time class="poster__date" datetime="2023-02-21T20:00:00">21<br> Feb</time>
               <div class="poster__description">
                 <h3 class="poster__title">Yokohama</h3>
                 <span class="poster__text">Rocky Island Club</span>
               </div>
             </li>
             <li class="poster__item">
-              <time class="poster__date" datetime="2023-02-23 20:00">23<br> Feb</time>
+              <time class="poster__date" datetime="2023-02-23T20:00:00">23<br> Feb</time>
               <div class="poster__description">
                 <h3 class="poster__title">Nagoya</h3>
                 <span class="poster__text">Isaka Club</span>
@@ -137,6 +135,7 @@
         </div>
       </section>
       <section class="socials">
+        <h2 class="visually-hidden">Social network of Scroppions Band.</h2>
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--fb" href="https://www.facebook.com/Scorpions/">Fb</a>
@@ -220,41 +219,41 @@
             <path d="M219.12,13.67V31.33h-10.83V.7h11.33l16.52,17.13V.7h10.83V31.33h-10.67l-17.18-17.66Z"/>
           </g>
         </svg>
-        <p class="footer__subtitle">Try to part in a new quiz and win couple free tickets to the concert in your city!</p>
-        <ul class="social-promo">
+        <p class="footer__subtitle">Try to part in a new quiz and win couple free tickets to the concert in our instagramm acount.</p>
+        <ul class="social-promo__list">
           <li class="social-promo__item">
-            <a href="" class="soical-promo__link">
-              <img class="social-promo__image" src="" alt="">
+            <a class="soical-promo__link" href="https://www.instagram.com/scorpions/?hl=en">
+              <img class="social-promo__image" src="/images/instagram-1.jpg" alt="Photo from the concert.">
             </a>
           </li>
           <li class="social-promo__item">
-            <a href="" class="soical-promo__link">
-              <img class="social-promo__image" src="" alt="">
+            <a class="soical-promo__link" href="https://www.instagram.com/scorpions/?hl=en">
+              <img class="social-promo__image" src="/images/instagram-2.jpg" alt="Photo from the concert.">
             </a>
           </li>
           <li class="social-promo__item">
-            <a href="" class="soical-promo__link">
-              <img class="social-promo__image" src="" alt="">
+            <a class="soical-promo__link" href="https://www.instagram.com/scorpions/?hl=en">
+              <img class="social-promo__image" src="/images/instagram-3.jpg" alt="Photo from the concert.">
             </a>
           </li>
           <li class="social-promo__item">
-            <a href="" class="soical-promo__link">
-              <img class="social-promo__image" src="" alt="">
+            <a class="soical-promo__link" href="https://www.instagram.com/scorpions/?hl=en">
+              <img class="social-promo__image" src="/images/instagram-4.jpg" alt="Photo from the concert.">
             </a>
           </li>
           <li class="social-promo__item">
-            <a class="soical-promo__link" href="">
-              <img class="social-promo__image" src="" alt="">
+            <a class="soical-promo__link" href="https://www.instagram.com/scorpions/?hl=en">
+              <img class="social-promo__image" src="/images/instagram-5.jpg" alt="Photo from the concert.">
             </a>
           </li>
           <li class="social-promo__item">
-            <a href="" class="soical-promo__link">
-              <img class="social-promo__image" src="" alt="">
+            <a class="soical-promo__link" href="https://www.instagram.com/scorpions/?hl=en">
+              <img class="social-promo__image" src="/images/instagram-6.jpg" alt="Photo from the concert.">
             </a>
           </li>
         </ul>
         <div class="footer__copyright">
-          <span class="footer__copyright-text">© 2023 – Slava Haikin. Training fan project.</span>
+          <span class="footer__copyright-text">© 2023 – Slava Haikin. Fan project.</span>
           <ul class="footer__copyright-socials social-small__list">
             <li class="social-small__item">
               <a class="social-small__link social-small__link--fb" href="https://www.facebook.com/Scorpions/">
