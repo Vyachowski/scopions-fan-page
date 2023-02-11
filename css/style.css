@@ -95,6 +95,7 @@
   width: 100%;
   min-width: 150px;
   padding: 6px 20px;
+  border-radius: none;
   border: 0 solid var(--alternate-font-color);
   border-bottom-width: 1px;
   font: inherit;
