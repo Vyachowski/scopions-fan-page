@@ -299,19 +299,14 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 100vh;
+  height: 80vh;
+  padding-top: 44px;
   background-color: var(--main-background-color);
 }
 
-@media (max-width: 360px) {
+@media (min-width: 768px) {
   .hero-section {
-    padding-top: 44px;
-  }
-}
-
-@media (min-width: 361px) {
-  .hero-section {
-    padding-top: 64px;
+    height: 100vh;
   }
 }
 
