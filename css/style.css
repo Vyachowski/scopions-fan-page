@@ -1,6 +1,7 @@
 /* Breakpoints set on:
    mobile-width: 360px;
-   tablet-width: 768px;
+   fablet-width: 768px;
+   tablet-width: 1024px;
    desktop-width: 1366px; */
 
 /* Variables */
@@ -104,6 +105,63 @@
   color: var(--alternate-font-color);
   background-color: transparent;
   outline: none;
+}
+
+/* Social network list */
+
+.social-small__list {
+  list-style-type: none;
+  /* Emulated flex gap */
+  --gap: 5px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-top: var(--gap);
+  margin: calc(-1 * var(--gap)) 0 var(--gap) calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+}
+
+.social-small__item {
+  margin: var(--gap) 0 0 var(--gap);
+}
+
+.social-small__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+
+.social-small__link:hover {
+  border: 1px solid var(--alternate-font-color);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.social-small__link--fb {
+  background-image: url("../images/sm-icons/facebook.svg");
+}
+
+.social-small__link--in {
+  background-image: url("../images/sm-icons/instagram.svg");
+}
+
+.social-small__link--tw {
+  background-image: url("../images/sm-icons/twitter.svg");
+}
+
+.social-small__link--yt {
+  background-image: url("../images/sm-icons/youtube.svg");
+}
+
+.social-small__link--sc {
+  background-image: url("../images/sm-icons/soundcloud.svg");
+}
+
+.social-small__link--bc {
+  background-image: url("../images/sm-icons/bandcamp.svg");
 }
 
 /* Base Typography & Grid */
@@ -300,7 +358,7 @@
   justify-content: center;
   align-items: flex-end;
   height: 90vh;
-  padding-top: 44px;
+  padding-top: 70px;
   background-color: var(--main-background-color);
 
   overflow: hidden;
@@ -369,9 +427,8 @@
   display: block;
   width: 100%;
   min-width: 10%;
-  max-width: 550px;
+  max-width: 350px;
   height: auto;
-  max-height: 80vh;
   margin: 0 auto;
   z-index: 3;
 }
@@ -405,65 +462,11 @@
   color: var(--alternate-font-color);
   font-weight: 600;
 }
+
 @media (min-width: 768px) {
   .hero-section__social-description {
     display: block;
   }
-}
-
-.social-small__list {
-  list-style-type: none;
-  /* Emulated flex gap */
-  --gap: 5px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  padding-top: var(--gap);
-  margin: calc(-1 * var(--gap)) 0 var(--gap) calc(-1 * var(--gap));
-  width: calc(100% + var(--gap));
-}
-
-.social-small__item {
-  margin: var(--gap) 0 0 var(--gap);
-}
-
-.social-small__link {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: center;
-}
-
-.social-small__link:hover {
-  border: 1px solid var(--alternate-font-color);
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-}
-
-.social-small__link--fb {
-  background-image: url("../images/sm-icons/facebook.svg");
-}
-
-.social-small__link--in {
-  background-image: url("../images/sm-icons/instagram.svg");
-}
-
-.social-small__link--tw {
-  background-image: url("../images/sm-icons/twitter.svg");
-}
-
-.social-small__link--yt {
-  background-image: url("../images/sm-icons/youtube.svg");
-}
-
-.social-small__link--sc {
-  background-image: url("../images/sm-icons/soundcloud.svg");
-}
-
-.social-small__link--bc {
-  background-image: url("../images/sm-icons/bandcamp.svg");
 }
 
 /* Poster Section */
@@ -504,8 +507,21 @@
   justify-content: center;
   list-style-type: none;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   row-gap: 35px;
+}
+
+@media (min-width: 768px) {
+  .poster__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .poster__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
 }
 
 .poster__item {
@@ -562,6 +578,18 @@
   list-style-type: none;
 }
 
+@media (min-width: 768px) {
+  .socials__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .socials__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .socials__item {
   display: flex;
   justify-content: center;
@@ -610,6 +638,10 @@
   content: "Soundcloud"
 }
 
+.socials__link--bc:after {
+  content: "Bandcamp"
+}
+
 /* Video Section */
 .promo-video {
   position: relative;
@@ -655,6 +687,19 @@
   padding: 60px 0;
   list-style-type: none;
 }
+
+@media (min-width: 768px) {
+  .partners__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partners__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 
 .partners__logo {
   display: block;
