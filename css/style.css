@@ -704,8 +704,9 @@
 .promo-video__content {
   position: relative;
   z-index: 2;
-  max-width: 960px;
-  max-height: 540px;
+  aspect-ratio: 16 / 9;
+  width: 80%;
+  height: auto;
 }
 
 /* Partners Section */
