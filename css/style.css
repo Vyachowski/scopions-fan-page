@@ -418,13 +418,42 @@
 
 .social-small__link {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
 }
 
 .social-small__link:hover {
   border: 1px solid var(--alternate-font-color);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.social-small__link--fb {
+  background-image: url("../images/sm-icons/facebook.svg");
+}
+
+.social-small__link--in {
+  background-image: url("../images/sm-icons/instagram.svg");
+}
+
+.social-small__link--tw {
+  background-image: url("../images/sm-icons/twitter.svg");
+}
+
+.social-small__link--yt {
+  background-image: url("../images/sm-icons/youtube.svg");
+}
+
+.social-small__link--sc {
+  background-image: url("../images/sm-icons/soundcloud.svg");
+}
+
+.social-small__link--bc {
+  background-image: url("../images/sm-icons/bandcamp.svg");
 }
 
 /* Poster Section */
