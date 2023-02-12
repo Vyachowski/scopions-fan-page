@@ -14,7 +14,6 @@
   --link-font-color: #38214a;
   --main-background-color: #181c42;
   --accent-background-color: #e30613;
-
 }
 
 /* Reset base styles */
@@ -538,8 +537,38 @@
   border: 1px solid black;
   border-radius: 5px;
   background-color: var(--main-background-color);
+  background-size: cover;
+  background-position: center;
   box-shadow: 0px 5px 12px -5px rgba(34, 60, 80, 0.6);
-  filter: blur(1px);
+}
+
+.poster__item:hover {
+  filter: blur(5px);
+  transition-duration: 0.5s;
+}
+
+.poster__item--first {
+  background-image: url("../images/poster-1.jpg");
+}
+
+.poster__item--second {
+  background-image: url("../images/poster-2.jpg");
+}
+
+.poster__item--third {
+  background-image: url("../images/poster-3.jpg");
+}
+
+.poster__item--fourth {
+  background-image: url("../images/poster-4.jpg");
+}
+
+.poster__item--fifth {
+  background-image: url("../images/poster-5.jpg");
+}
+
+.poster__item--sixth {
+  background-image: url("../images/poster-6.jpg");
 }
 
 .poster__date {
@@ -559,6 +588,11 @@
   line-height: 20px;
   color: var(--alternate-font-color);
   margin-bottom:5px;
+}
+
+.poster__text {
+  color: var(--alternate-font-color);
+  opacity: 0.5;
 }
 
 /* Poster Section */
@@ -699,7 +733,6 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 
 .partners__logo {
   display: block;
