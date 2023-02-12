@@ -823,6 +823,7 @@
   margin: 0 auto;
   margin-bottom: 40px;
   padding: 10px 20px;
+  border-radius: 0;
   border: 0 solid var(--alternate-font-color);
   border-bottom-width: 1px;
   font: inherit;
