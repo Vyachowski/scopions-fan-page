@@ -844,6 +844,7 @@
 
 .footer {
   margin-top: -1px;
+  padding-top: 1px;
   padding-bottom: 40px;
   background-color: var(--main-background-color);
 }
