@@ -775,6 +775,8 @@
 .booking__form {
   display: grid;
   grid-template-columns: 1fr;
+  justify-content: center;
+  max-width: 800px;
   margin: 0 auto;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -785,11 +787,27 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 0 auto;
   border: 0;
+}
+
+@media (min-width: 768px) {
+  .booking__fieldset {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .booking__field {
   margin-bottom: 18px;
+}
+
+@media (min-width: 768px) {
+  .booking__field {
+    width: 48%;
+    max-width: 360px;
+  }
 }
 
 .booking__field::placeholder {
@@ -798,7 +816,6 @@
 
 .booking__textarea {
   width: 100%;
-  max-width: 740px;
   margin: 0 auto;
   margin-bottom: 40px;
   padding: 10px 20px;
