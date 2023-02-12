@@ -772,6 +772,10 @@
   font-size: 16px;
 }
 
+.booking__accent {
+  white-space: nowrap;
+}
+
 .booking__form {
   display: grid;
   grid-template-columns: 1fr;
@@ -840,8 +844,9 @@
 /* FOOTER */
 
 .footer {
-  background-color: var(--main-background-color);
+  margin-top: -1px;
   padding-bottom: 40px;
+  background-color: var(--main-background-color);
 }
 
 .footer__wrapper {
@@ -907,7 +912,4 @@
   font-size: 15px;
   color: var(--alternate-font-color);
   text-decoration-line: none;
-}
-
-.footer__socials {
 }
