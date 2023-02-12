@@ -852,6 +852,24 @@
   list-style-type: none;
 }
 
+@media (min-width: 768px) {
+  .social-promo__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .social-promo__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1366px) {
+  .social-promo__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
 .social-promo__image {
   display: block;
   width: 100%;
