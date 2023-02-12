@@ -810,7 +810,6 @@
 @media (min-width: 768px) {
   .booking__field {
     width: 48%;
-    max-width: 360px;
   }
 }
 
@@ -860,6 +859,13 @@
 
 .footer__logo {
   margin-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+  .footer__logo {
+    width: 30%;
+    max-width: 450px;
+  }
 }
 
 .footer__subtitle {
