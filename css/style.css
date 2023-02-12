@@ -352,7 +352,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 100vh;
+  height: 90vh;
   padding-top: 70px;
   background-color: var(--main-background-color);
   overflow: hidden;
@@ -420,11 +420,18 @@
 .hero-section__image {
   position: relative;
   display: block;
-  width: auto;
-  height: 350px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   z-index: 3;
 }
+
+@media (orientation: landscape) {
+  .hero-section__image {
+    width: 50%;
+  }
+}
+
 
 .hero-section__sign {
   position: absolute;
