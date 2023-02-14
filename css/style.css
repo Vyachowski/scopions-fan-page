@@ -724,6 +724,10 @@
   height: auto;
 }
 
+.promo-video__content {
+  border: 0;
+}
+
 /* Partners Section */
 
 .partners__list {
