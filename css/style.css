@@ -880,6 +880,7 @@
   text-decoration: none;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  text-transform: uppercase;
 }
 
 /* FOOTER */
