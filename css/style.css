@@ -864,7 +864,6 @@
   top: 50%;
   left: 0;
   display: none;
-  background-color: var(--accent-background-color);
   z-index: 99;
 }
 
@@ -881,6 +880,7 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
   text-transform: uppercase;
+  background-color: var(--accent-background-color);
 }
 
 /* FOOTER */
