@@ -173,6 +173,7 @@
 }
 
 .page__body {
+  position: relative;
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -452,12 +453,20 @@
 .hero-section__socials {
   position: absolute;
   z-index: 10;
-  bottom: 50px;
-  right: 50px;
+  top: 15%;
+  right: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .hero-section__socials {
+    z-index: 10;
+    top: unset;
+    bottom: 50px;
+  }
 }
 
 .hero-section__social-description {
@@ -846,6 +855,31 @@
 
 .booking__button {
   margin: 0 auto;
+}
+
+/* ASIDE */
+
+.page__label {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  display: none;
+  padding: 30px 5px;
+  background-color: var(--accent-background-color);
+  z-index: 99;
+}
+
+@media (min-width: 768px) {
+  .page__label {
+    display: block;
+  }
+}
+
+.page__outer-link {
+  color: var(--alternate-font-color);
+  text-decoration: none;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 /* FOOTER */
