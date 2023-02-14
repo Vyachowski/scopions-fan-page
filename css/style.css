@@ -864,7 +864,6 @@
   top: 50%;
   left: 0;
   display: none;
-  padding: 30px 5px;
   background-color: var(--accent-background-color);
   z-index: 99;
 }
@@ -876,6 +875,7 @@
 }
 
 .page__outer-link {
+  padding: 30px 5px;
   color: var(--alternate-font-color);
   text-decoration: none;
   writing-mode: vertical-rl;
